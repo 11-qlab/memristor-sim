@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memristor-sim"
+version = "0.1.0"
+authors = [{name = "11-qlab"}]
+description = "Memristor crossbar simulator for analog neural network inference"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["memristor", "crossbar", "analog computing", "neuromorphic", "in-memory computing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/11-qlab/memristor-sim"
+
+[project.scripts]
+memristor-sim = "memristor_sim.cli:main"
